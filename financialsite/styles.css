@@ -14,11 +14,6 @@
 }
  .header{
      background-color: white;
-    /* to add gradient color background*/
-     background-image: linear-gradient(135deg, #b39bc8, #672d8d);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
      width: 100%;
      min-height: auto;
      overflow: auto;
@@ -62,7 +57,7 @@
      transition-duration: 0.5s;
 }
  nav li a {
-     color: black;
+     color: white;
 }
  nav li:hover {
      background: #672d8d;
@@ -104,14 +99,20 @@
 }
  .content{
      overflow: hidden;
-     width: 85%;
+
 }
  .content2{
      overflow: hidden;
-     width: 85%;
      display: grid;
      grid-template-columns: auto auto auto;
 }
+
+.content_rec{
+  overflow: hidden;
+  width: 90%;
+  margin:20px;
+}
+
  .blog {
      margin: 15px 5px 15px 10px;
      padding: 10px;
@@ -122,6 +123,8 @@
      box-shadow: 5px 5px 5px #662d91, -5px 5px 5px #2f3192, 5px -5px 5px #974c7c;
      background-color: white;
      font-size: 1.25em;
+     max-height: 300px;
+     overflow-y: auto;
 }
  .blog-vertical{
      margin: 15px 5px 15px 10px;
@@ -135,7 +138,7 @@
      width:15%
 }
  .blog img{
-     width: 100px;
+
      height: 150px;
      vertical-align: top;
      display: block;
@@ -154,10 +157,12 @@
      text-align: center;
 }
  .blog-text-right{
-     width: 75%;
+     width: 85%;
+     margin-left: 25px;
 }
  .blog-text-left{
-     width: 75%;
+     width: 85%;
+     margin-right: 25px;
 }
  .blog-text-center{
      margin: 10px;
@@ -169,24 +174,9 @@
      display: block;
      margin-left: auto;
      margin-right: auto;
-     width: 60%;
+     width: 25%;
 }
- #sidebar{
-     width: 13%;
-     float: right;
-}
- #sidebar p{
-     margin: 15px;
-     padding: 15px;
-}
- #mc_embed_signup{
-     margin: 15px;
-     padding: 15px;
-}
- .twitter-timeline{
-     margin: 15px;
-     padding: 15px;
-}
+
  footer{
      background-color: white;
      color: #000000;
@@ -196,6 +186,13 @@
 }
  * {
      box-sizing: border-box;
+}
+
+hr{
+  height:12px;
+  border:0;
+  box-shadow: inset 0 12px 12px -12px rgba(60, 2, 90, 0.81);
+
 }
  .tabs {
      display: flex;
@@ -220,7 +217,7 @@
      cursor: pointer;
      font-weight: bold;
      font-size: 18px;
-     color: #7f7f7f;
+     color: white;
      transition: background 0.1s, color 0.1s;
 }
  .label:hover {
@@ -256,4 +253,7 @@
  .input:checked + .label + .panel {
      display: block;
 }
- 
+table{
+  text-align: left;
+  width: 100%;
+}
